@@ -1,8 +1,8 @@
-es."""
-"""ALTERNATE SOLUTION
-    if len(tuple_a) <#!/usr/bin/python3
+#!/usr/bin/python3
 
-"""a function that adds 2 tupl 2:
+"""a function that adds 2 tuples."""
+"""ALTERNATE SOLUTION
+    if len(tuple_a) < 2:
         if len(tuple_a) == 0:
             tuple_a = 0, 0
         else:
