@@ -1,12 +1,14 @@
 #!/usr/bin/python3
-print_matrix_integer = __import__('6-print_matrix_integer').print_matrix_integer
 
-matrix = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-]
+"""a function that prints a matrix of integers."""
 
-print_matrix_integer(matrix)
-print("--")
-print_matrix_integer()
+
+def print_matrix_integer(matrix=[[]]):
+    length = len(matrix)
+    for x in range(length):
+        for number in matrix[x]:
+            if number != matrix[x][len(matrix[x])-1]:
+                print("{:d}".format(number), end=" ")
+            else:
+                print("{:d}".format(number), end="")
+        print("")
