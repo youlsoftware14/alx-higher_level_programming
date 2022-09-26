@@ -1,12 +1,13 @@
-!/usr/bin/python3
-
-"""a class Square that defines a
-square by: (based on 0-square.py)"""
+#!/usr/bin/python3
+"""Define a class Square."""
 
 
 class Square:
-    """Private instance attribute: size
-Instantiation with size (no type/value verification)"""
+    """Represent a square."""
 
     def __init__(self, size):
+        """Initialize a new Square.
+        Args:
+            size (int): The size of the new square.
+        """
         self.__size = size
